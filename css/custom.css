@@ -1,23 +1,97 @@
+
+@font-face {
+    font-family: "ProximaSoft Regular";
+    src: url("../fonts/ProximaSoft Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "ProximaSoft Medium";
+    src: url("../fonts/ProximaSoft Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "ProximaSoft Semibold";
+    src: url("../fonts/ProximaSoft Semibold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "ProximaSoft Bold";
+    src: url("../fonts/ProximaSoft Bold.otf") format("opentype");
+}
+
 body {
     margin: 0px;
     padding: 0px;
 }
 
+div, span, ul, li, a {
+    font-family: 'ProximaSoft Regular';
+}
+
 /* HEADER */
 .header {
     background: #3c3c3c;
+    padding: 15px 30px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.header > .col:first-child {
+    max-width: 250px;
+}
+
+.header > .col:nth-child(2) {
+    text-align: center;
+    line-height: 3rem;
+}
+
+.header > div:nth-child(3) input {
+    display: inline;
+    width: 75%;
+}
+
+#search-btn {
+    margin-top: -3px;
+}
+
+.brand {
+    visibility: hidden;
+}
+
+
+#logo {
+    height: 50px;
+    width: auto;
+}
+
+#page-title {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+#title-link {
+    color: #fa4d06;
+    text-decoration: underline;
+}
+
+#date-time {
+    color: #807f7f;
+}
+
+#settings-btn {
+    font-size: 2rem;
+    color: #fa4d09;
+    vertical-align: sub;
+    margin-left: 10px;
 }
 
 /* SIDEBAR */
 .nav-side-menu {
     overflow: auto;
-    font-family: verdana;
     font-size: 12px;
-    font-weight: 200;
     background: #333232;
     position: fixed;
-    top: 40px;
-    width: 300px;
+    width: 250px;
     height: 100%;
     color: #e1ffff;
 }
@@ -100,12 +174,15 @@ body {
     transition: all 1s ease;
 }
 
-@media (max-width: 767px) {
+.nav-side-menu ul#menu-content > li a {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
     .nav-side-menu {
         position: relative;
         width: 100%;
         margin-bottom: 10px;
-        margin-top: -40px;
     }
 
     .nav-side-menu .toggle-btn {
@@ -116,22 +193,64 @@ body {
         top: 10px;
         z-index: 10 !important;
         padding: 3px;
-        background: #ffffff;
-        color: #000;
+        background: #3c3c3c;
+        color: #ffffff;
         width: 40px;
         text-align: center;
     }
+
     .brand {
         text-align: left !important;
         font-size: 22px;
         padding-left: 20px;
         line-height: 50px !important;
     }
+    
+    .header {
+        padding: 5px;
+    }
+
+    .header > .col:first-child {
+        max-width: 200px;
+    }
+
+    .header > div:nth-child(3) {
+        margin-top: 5px;
+    } 
+
+    .header > div:nth-child(3) input {
+        width: 70%;
+    }
+
+    #page-title {
+        font-size: 24px;
+    }
+
+    #settings-btn {
+        margin-left: 0;
+    }
 }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
+    .header > div:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
     .nav-side-menu .menu-list .menu-content {
         display: block;
     }
 }
 
+.btn-primary {
+    background: #fa4c06;
+    border: 1px solid #fa4c06;
+    border-radius: 0;
+    margin-left: -5px;
+}
+
+
+input.form-control {
+    border-radius: 0;
+}
