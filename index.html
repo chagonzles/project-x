@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    
-    <div class="row header">
+    <div class="container-fluid">
+      <div class="row header">
         <div class="col">
           <img src="img/logo.png" alt="" id="logo">  
           <span id="page-title">Project <span id="title-link">X</span></span>
@@ -26,67 +26,131 @@
             <button type="button" name="" id="search-btn" class="btn btn-primary">GO</button>
             <i class="fa fa-cog" id="settings-btn"></i>
         </div>
-    </div>
-    <div class="nav-side-menu">
-        <div class="brand">Brand</div>
-            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-      
-            <div class="menu-list">
-                <ul id="menu-content" class="menu-content collapse out">
-                    <li  data-toggle="collapse" data-target="#dispatch" class="collapsed">
-                      <a href="#">Dispatch <span class="arrow"></span></a>
-                    </li>
-                    <ul class="sub-menu collapse show" id="dispatch">
-                        <li><a href="#">Large Letters</a></li>
-                        <li><a href="#">Parcels & Packets</a></li>
-                        <li><a href="#">Pallets</a></li>
-                        <li><a href="#">International</a></li>
-                        <li><a href="#">Collections</a></li>
+      </div><!-- /.row-header -->
+      <div class="row content">
+        <div class="col-md-12 col-lg-3 sidemenu-col">
+          <div class="nav-side-menu">
+            <div class="brand">Brand</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li  data-toggle="collapse" data-target="#dispatch" class="collapsed">
+                          <a href="#">Dispatch <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="dispatch">
+                            <li><a href="#">Large Letters</a></li>
+                            <li><a href="#">Parcels & Packets</a></li>
+                            <li><a href="#">Pallets</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Collections</a></li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#customer-service" class="collapsed">
+                          <a href="#">Customer Service <span class="arrow"></span></a>
+                        </li>  
+                        <ul class="sub-menu collapse show" id="customer-service">
+                          <li>Tickets</li>
+                          <li>Customer Returns</li>
+                          <li class="active">Message Inbox</li>
+                        </ul>
+            
+                        <li data-toggle="collapse" data-target="#orders" class="collapsed">
+                          <a href="#">Orders <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="orders">
+                          <li>eBay</li>
+                          <li>Amazon</li>
+                          <li>Website</li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#claims-credits" class="collapsed">
+                          <a href="#">Claims & Credits <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="claims-credits">
+                          <li>My Claims</li>
+                          <li>Pending Credits</li>
+                          <li>Notifications</li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#reports" class="collapsed">
+                          <a href="#">Reports <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="reports">
+                          <li>Your Reports</li>
+                          <li>My Watch list</li>
+                          <li>7 Day Quick View</li>
+                          <li>Get Reviews</li>
+                        </ul>                
                     </ul>
+                </div>
+          </div><!-- navside-menu -->
+        </div><!-- /.side-menu-col -->
 
-                    <li data-toggle="collapse" data-target="#customer-service" class="collapsed">
-                      <a href="#">Customer Service <span class="arrow"></span></a>
-                    </li>  
-                    <ul class="sub-menu collapse show" id="customer-service">
-                      <li>Tickets</li>
-                      <li>Customer Returns</li>
-                      <li class="active">Message Inbox</li>
-                    </ul>
-        
-                    <li data-toggle="collapse" data-target="#orders" class="collapsed">
-                      <a href="#">Orders <span class="arrow"></span></a>
-                    </li>
-                    <ul class="sub-menu collapse show" id="orders">
-                      <li>eBay</li>
-                      <li>Amazon</li>
-                      <li>Website</li>
-                    </ul>
-
-                    <li data-toggle="collapse" data-target="#claims-credits" class="collapsed">
-                      <a href="#">Claims & Credits <span class="arrow"></span></a>
-                    </li>
-                    <ul class="sub-menu collapse show" id="claims-credits">
-                      <li>My Claims</li>
-                      <li>Pending Credits</li>
-                      <li>Notifications</li>
-                    </ul>
-
-                    <li data-toggle="collapse" data-target="#reports" class="collapsed">
-                      <a href="#">Reports <span class="arrow"></span></a>
-                    </li>
-                    <ul class="sub-menu collapse show" id="reports">
-                      <li>Your Reports</li>
-                      <li>My Watch list</li>
-                      <li>7 Day Quick View</li>
-                      <li>Get Reviews</li>
-                    </ul>                
-                </ul>
+        <div class="col content-col">
+          <div class="row">
+            <div class="col">
+              <h4>Message Inbox</h4>
             </div>
-    </div>
+          </div>
+          <div class="row dark-row">
+            <div class="col">
+              <div class="row">
+                <div class="col">
+                  <h4>Unread</h4>
+                </div>
+                <div class="col">
+                  <h4 class="text-right page-no">1-4 of 4</h4>
+                </div>
+              </div>
+              <div class="table-dark table-responsive-sm">
+                <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Subject</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Source</td>
+                      <td>316 Plainfield Avenue</td>
+                      <td>01.01.18</td>
+                      <td>9:40 AM</td>
+                    </tr>
+                    <tr>
+                      <td>ebay</td>
+                      <td>316 Plainfield Avenue</td>
+                      <td>01.01.18</td>
+                      <td>9:40 AM</td>
+                    </tr>
+                    <tr>
+                      <td>LCP</td>
+                      <td>316 Plainfield Avenue</td>
+                      <td>01.01.18</td>
+                      <td>9:40 AM</td>
+                    </tr>
+                    <tr>
+                      <td>Source</td>
+                      <td>316 Plainfield Avenue</td>
+                      <td>01.01.18</td>
+                      <td>9:40 AM</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- /.table-dark -->
+            </div>
+          </div><!-- /.dark-row unread row -->
+        </div><!-- /.content-col -->
+      </div><!-- /.row content -->
+    </div><!-- /.container-fluid -->
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>

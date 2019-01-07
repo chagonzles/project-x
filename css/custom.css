@@ -1,4 +1,5 @@
 
+/* FONTS */
 @font-face {
     font-family: "ProximaSoft Regular";
     src: url("../fonts/ProximaSoft Regular.otf") format("opentype");
@@ -19,13 +20,29 @@
     src: url("../fonts/ProximaSoft Bold.otf") format("opentype");
 }
 
+div, span, ul, li, a {
+    font-family: 'ProximaSoft Regular';
+}
+
+/* GENERAL */
 body {
     margin: 0px;
     padding: 0px;
 }
 
-div, span, ul, li, a {
-    font-family: 'ProximaSoft Regular';
+.container-fluid { 
+    padding-left: 0;
+}
+
+.btn-primary {
+    background: #fa4c06;
+    border: 1px solid #fa4c06;
+    border-radius: 0;
+    margin-left: -5px;
+}
+
+input.form-control {
+    border-radius: 0;
 }
 
 /* HEADER */
@@ -33,7 +50,6 @@ div, span, ul, li, a {
     background: #3c3c3c;
     padding: 15px 30px;
     margin-left: 0;
-    margin-right: 0;
 }
 
 .header > .col:first-child {
@@ -57,7 +73,6 @@ div, span, ul, li, a {
 .brand {
     visibility: hidden;
 }
-
 
 #logo {
     height: 50px;
@@ -86,6 +101,10 @@ div, span, ul, li, a {
 }
 
 /* SIDEBAR */
+.sidemenu-col {
+    padding-right: 0;
+}
+
 .nav-side-menu {
     overflow: auto;
     font-size: 12px;
@@ -178,6 +197,46 @@ div, span, ul, li, a {
     font-size: 16px;
 }
 
+/* CONTENT */
+.content-col {
+    padding-left: 30px;
+}
+
+.content-col > .row {
+    padding: 1.25rem 2rem;
+}
+
+.dark-row {
+    background: #3b3b3b;
+    color: #ffffff;
+}
+
+.table-dark {
+    color: #ffffff;
+    background: #3b3b3b;
+}
+
+.table-dark thead {
+    background: #3a3a3a;
+}
+
+.table-dark td, .table-dark th, .table-dark thead th {
+    border-color: #3b3939;
+}
+
+.table-dark .table-striped tbody tr:nth-of-type(odd) {
+    background: #474646;
+}
+
+.table-dark .table-striped tbody tr:nth-of-type(even) {
+    background: #3a3838;
+}
+
+h4.page-no {
+    color: #fa4c06;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
     .nav-side-menu {
         position: relative;
@@ -229,6 +288,10 @@ div, span, ul, li, a {
     #settings-btn {
         margin-left: 0;
     }
+
+    .content-col > .row {
+        padding: 0.5rem 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -241,16 +304,8 @@ div, span, ul, li, a {
     .nav-side-menu .menu-list .menu-content {
         display: block;
     }
-}
 
-.btn-primary {
-    background: #fa4c06;
-    border: 1px solid #fa4c06;
-    border-radius: 0;
-    margin-left: -5px;
-}
-
-
-input.form-control {
-    border-radius: 0;
+    .sidemenu-col {
+        max-width: 250px;
+    }
 }
