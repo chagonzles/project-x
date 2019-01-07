@@ -187,7 +187,8 @@ input.form-control {
 
 .nav-side-menu li a {
     text-decoration: none;
-    color: #e1ffff;
+    color: #ffffff;
+    font-size: 14px;
 }
 
 .nav-side-menu li a i {
@@ -206,8 +207,12 @@ input.form-control {
     transition: all 1s ease;
 }
 
+.nav-side-menu ul {
+    padding-bottom: 8px;
+}
+
 .nav-side-menu ul#menu-content > li a {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* CONTENT */
@@ -265,7 +270,6 @@ tbody tr td {
 .table-light td, .table-light th, .table-light thead th {
     border-color: #ecebeb;
 }
-
 
 .table-dark {
     color: #ffffff;
