@@ -66,8 +66,13 @@ input.form-control {
     width: 100%;
 }
 
+.header-row > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .header-row > .col:first-child {
-    max-width: 250px;
+    max-width: 220px;
 }
 
 .header-row > .col:nth-child(2) {
@@ -382,14 +387,35 @@ h4.page-no {
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 575px) {
     .sidemenu-col {
-        margin-top: 21px;
+        margin-top: 22px;
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 757px) {
+    .header-row > div:nth-child(3) {
+        flex: 0 0 65%;
+        max-width: 65%;
+    }
+
     .sidemenu-col {
         margin-top: -22px;
+    }
+}
+
+@media (min-width: 725px) and (max-width: 768px) {
+    .sidemenu-col {
+        margin-top: -22px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .header-row > .col:nth-child(2) {
+        font-size: 12px;
+    }
+
+    .header-row > div:nth-child(3) input {
+        width: 60%;
     }
 }
