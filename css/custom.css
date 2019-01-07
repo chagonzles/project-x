@@ -114,6 +114,7 @@ input.form-control {
 #page-title {
     font-size: 28px;
     color: #ffffff;
+    vertical-align: middle;
 }
 
 #title-link {
@@ -143,7 +144,6 @@ input.form-control {
     overflow: auto;
     font-size: 12px;
     background: #333232;
-    position: fixed;
     width: 250px;
     height: 100%;
     color: #e1ffff;
@@ -238,7 +238,7 @@ input.form-control {
 
 /* CONTENT */
 .content-row {
-    margin-top: 82px;
+    margin-top: 80px;
 }
 
 .content-col {
@@ -346,7 +346,7 @@ h4.page-no {
         cursor: pointer;
         position: absolute;
         right: 10px;
-        top: 10px;
+        top: 15px;
         z-index: 10 !important;
         padding: 3px;
         background: #3c3c3c;
@@ -367,12 +367,14 @@ h4.page-no {
     }
 
     .header-row > .col:first-child {
-        max-width: 200px;
+        text-align: center;
+        max-width: 100%;
     }
 
     .header-row > div:nth-child(3) {
         margin-top: 5px;
         margin-bottom: 5px;
+        text-align: center;
     } 
 
     .header-row > div:nth-child(3) input {
