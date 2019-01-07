@@ -45,6 +45,12 @@ body {
     margin-left: -5px;
 }
 
+.btn-primary:hover {
+    color: #fff;
+    background: #fa4c06;
+    border: 1px solid #fa4c06;
+}
+
 input.form-control {
     border-radius: 0;
 }
@@ -110,6 +116,7 @@ input.form-control {
     color: #fa4d09;
     vertical-align: sub;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 /* SIDEBAR */
@@ -339,6 +346,7 @@ h4.page-no {
 
     .header-row > div:nth-child(3) {
         margin-top: 5px;
+        margin-bottom: 5px;
     } 
 
     .header-row > div:nth-child(3) input {
