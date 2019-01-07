@@ -20,7 +20,8 @@
     src: url("../fonts/ProximaSoft Bold.otf") format("opentype");
 }
 
-div, span, ul, li, a, p {
+div, span, ul, li, a, p, 
+button, input, optgroup, select, textarea {
     font-family: 'ProximaSoft Regular';
 }
 
@@ -38,10 +39,13 @@ body {
     padding-left: 0;
 }
 
+button {
+    border-radius: 0 !important;
+}
+
 .btn-primary {
     background: #fa4c06;
     border: 1px solid #fa4c06;
-    border-radius: 0;
     margin-left: -5px;
 }
 
@@ -49,6 +53,11 @@ body {
     color: #fff;
     background: #fa4c06;
     border: 1px solid #fa4c06;
+}
+
+.btn-secondary {
+    background: #333232;
+    color: #ffffff;
 }
 
 input.form-control {
@@ -312,6 +321,18 @@ h4.page-no {
     color: #fa4c06;
 }
 
+#load-more-btn {
+    font-size: 14px;
+    width: 140px;
+    padding: 10px;
+}
+
+#load-more-btn .fa-chevron-right {
+    color: #ff4c00;
+    margin-left: 5px;
+}
+
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
     .nav-side-menu {
@@ -417,5 +438,11 @@ h4.page-no {
 
     .header-row > div:nth-child(3) input {
         width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .th-sm {
+        width: 120px;
     }
 }
