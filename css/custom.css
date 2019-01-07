@@ -65,6 +65,10 @@ input.form-control {
     line-height: 3rem;
 }
 
+.header-row > div:nth-child(3) {
+    text-align: right;
+}
+
 .header-row > div:nth-child(3) input {
     display: inline;
     width: 75%;
