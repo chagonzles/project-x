@@ -242,6 +242,10 @@ input.form-control {
     color: #000000;
 }
 
+table {
+    font-size: 14px;
+}
+
 thead tr th {
     font-family: "ProximaSoft Bold";
 }
