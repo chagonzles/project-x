@@ -20,8 +20,12 @@
     src: url("../fonts/ProximaSoft Bold.otf") format("opentype");
 }
 
-div, span, ul, li, a {
+div, span, ul, li, a, p {
     font-family: 'ProximaSoft Regular';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "ProximaSoft Regular";  /*to be changed to light*/
 }
 
 /* GENERAL */
@@ -219,10 +223,49 @@ input.form-control {
     padding: 1.25rem 2rem;
 }
 
+.title-page-row {
+    margin-bottom: 0.75rem;
+}
+
 .dark-row {
     background: #3b3b3b;
     color: #ffffff;
 }
+
+.light-row {
+    background: #ecebeb;
+    color: #000000;
+}
+
+thead tr th {
+    font-family: "ProximaSoft Bold";
+}
+
+tbody tr td {
+    font-family: "ProximaSoft Regular";
+}
+
+.table-light {
+    color: #000000;
+    background: #ecebeb;
+}
+
+.table-light thead {
+    background: #ecebeb;
+}
+
+.table-light .table-striped tbody tr:nth-of-type(odd) {
+    background: #dfdddd;
+}
+
+.table-light .table-striped tbody tr:nth-of-type(even) {
+    background: #ecebeb;
+}
+
+.table-light td, .table-light th, .table-light thead th {
+    border-color: #ecebeb;
+}
+
 
 .table-dark {
     color: #ffffff;
