@@ -39,6 +39,10 @@ body {
     padding-left: 0;
 }
 
+.right-align {
+    text-align: right;
+}
+
 button {
     border-radius: 0 !important;
 }
@@ -58,7 +62,15 @@ button {
 .btn-secondary {
     background: #333232;
     color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
 }
+
+.btn-secondary .fa-chevron-right {
+    color: #ff4c00;
+    margin-left: 5px;
+}
+
 
 input.form-control {
     border-radius: 0;
@@ -249,8 +261,8 @@ input.form-control {
     padding: 1.25rem 2rem;
 }
 
-.title-page-row {
-    margin-bottom: 0.75rem;
+.content-title-row h4 {
+    line-height: 2rem;
 }
 
 .dark-row {
@@ -317,21 +329,15 @@ tbody tr td {
     background: #3a3838;
 }
 
+.table tr td.td-link a {
+    color: #fa4c06;
+    text-decoration: none;
+    font-family: "ProximaSoft Medium";
+}
+
 h4.page-no {
     color: #fa4c06;
 }
-
-#load-more-btn {
-    font-size: 14px;
-    width: 140px;
-    padding: 10px;
-}
-
-#load-more-btn .fa-chevron-right {
-    color: #ff4c00;
-    margin-left: 5px;
-}
-
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
