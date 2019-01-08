@@ -43,6 +43,10 @@ body {
     text-align: right;
 }
 
+.center-align {
+    text-align: center;
+}
+
 button {
     border-radius: 0 !important;
 }
@@ -339,6 +343,18 @@ h4.page-no {
     color: #fa4c06;
 }
 
+.return-icon-col {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+img.return-icon {
+    height: 120px;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
     .nav-side-menu {
@@ -452,5 +468,9 @@ h4.page-no {
 @media (min-width: 1024px) {
     .th-sm {
         width: 120px;
+    }
+
+    .th-md {
+        width: 200px;
     }
 }
