@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Project X</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/all.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header-row">
+        <div class="col">
+          <img src="images/logo.png" alt="" id="logo">  
+          <span id="page-title">Project <span id="title-link">X</span></span>
+        </div>
+        <div class="col">
+            <span id="date-time">Wednesday 28 December 2018 - 11:30</span>
+        </div>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" placeholder="Search" id="search-text">
+            <button type="button" name="" id="search-btn" class="btn btn-primary">GO</button>
+            <i class="fa fa-cog" id="settings-btn"></i>
+        </div>
+      </div><!-- /.row-header -->
+      <div class="row content-row">
+        <div class="col-md-12 col-lg-3 sidemenu-col">
+          <div class="nav-side-menu">
+            <div class="brand">Brand</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li  data-toggle="collapse" data-target="#dispatch" class="collapsed">
+                          <a href="#">Dispatch <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="dispatch">
+                            <li><a href="#">Large Letters</a></li>
+                            <li><a href="#">Parcels & Packets</a></li>
+                            <li><a href="#">Pallets</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Collections</a></li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#customer-service" class="collapsed">
+                          <a href="#">Customer Service <span class="arrow"></span></a>
+                        </li>  
+                        <ul class="sub-menu collapse show" id="customer-service">
+                          <li><a href="#">Tickets</a></li>
+                          <li class="active"><a href="my-claims.html">Customer Returns</a></li>
+                          <li><a href="message-inbox.html">Message Inbox</a></li>
+                        </ul>
+            
+                        <li data-toggle="collapse" data-target="#orders" class="collapsed">
+                          <a href="#">Orders <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="orders">
+                          <li><a href="#">eBay</a></li>
+                          <li><a href="#">Amazon</a></li>
+                          <li><a href="#">Website</a></li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#claims-credits" class="collapsed">
+                          <a href="#">Claims & Credits <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="claims-credits">
+                          <li><a href="#">My Claims</a></li>
+                          <li><a href="#">Pending Credits</a></li>
+                          <li><a href="#">Notifications</a></li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#reports" class="collapsed">
+                          <a href="#">Reports <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="reports">
+                          <li><a href="#">Your Reports</a></li>
+                          <li><a href="#">My Watch list</a></li>
+                          <li><a href="#">7 Day Quick View</a></li>
+                          <li><a href="#">Get Reviews</a></li>
+                        </ul>                
+                    </ul>
+                </div>
+          </div><!-- navside-menu -->
+        </div><!-- /.side-menu-col -->
+
+        <div class="col content-col">
+          <div class="row content-title-row">
+            <div class="col">
+              <h4>Live Chat</h4>
+            </div>
+          </div>
+
+          <div class="row">
+              <div class="col">
+
+                  <div class="row form-row">
+                      <div class="col-sm-5 col-lg-6">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Your Name">
+                            <small id="helpId" class="form-text text-muted"></small>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Parcel Ref">
+                            <small id="helpId" class="form-text text-muted"></small>
+                          </div>
+                      </div>
+                    <div class="col-sm-4 col-xl-2">
+                        <div class="form-group mt-2">
+                          <label>Not parcel related</label>
+                          <input type="checkbox" id="checkbox" class="form-check-input" />
+                        </div>    
+                    </div>
+                  </div>
+
+                  <div class="row form-row">
+                      <div class="col-sm-5 col-lg-6">
+                            <select class="custom-select custom-select-lg mb-3">
+                                <option selected="">Reason for Chat</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                      </div>
+                  </div>
+
+       
+                  <div class="row form-row">
+                      <div class="col">
+                          <div class="form-group">
+                            <label for=""></label>
+                            <textarea class="form-control" name="" id="" rows="20" placeholder="Comments"></textarea>
+                          </div>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+
+          <div class="row dark-row">
+              <div class="col-sm-12 mb-4">
+                  <h4>Star Rating</h4>
+              </div>
+              <div class="col rating-col mb-2">
+                <div class="rating">
+                  <img src="images/star.png" class="star-rating" alt="">
+                  <img src="images/star.png" class="star-rating" alt="">
+                  <img src="images/star.png" class="star-rating" alt="">
+                  <img src="images/star.png" class="star-rating" alt="">
+                  <img src="images/star-half.png" class="star-half-rating" alt="">
+                </div>
+              </div>
+              <div class="col-lg-7 col-xl-9 mb-2">
+                <input type="text" class="form-control" placeholder="Any Additional Comments?">
+              </div>
+              <div class="col mb-2">
+                <button class="btn btn-primary" id="add-comments-btn">SUBMIT <i class="fa fa-chevron-right"></i></button>
+              </div>
+          </div>
+
+ 
+          
+
+        </div><!-- /.content-col -->
+
+      </div><!-- /.row content -->
+    </div><!-- /.container-fluid -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+  </body>
+</html>
