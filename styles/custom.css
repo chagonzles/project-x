@@ -318,8 +318,13 @@ textarea {
     padding: 1.25rem 2rem;
 }
 
+.content-title-row {
+    height: 90px;
+    background: #ffffff;
+}
+
 .content-title-row h4 {
-    line-height: 2rem;
+    line-height: 3rem;
 }
 
 .dark-row {
@@ -328,6 +333,11 @@ textarea {
 }
 
 .light-row {
+    background: #ffffff;
+    color: #000000;
+}
+
+.gray-row {
     background: #ecebeb;
     color: #000000;
 }
