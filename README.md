@@ -7,4 +7,4 @@ Project X Responsive Website using HTML, CSS, Bootstrap
 - My Claims - https://chagonzles.github.io/project-x/my-claims.html
 - Pending Claims - https://chagonzles.github.io/project-x/pending-claims.html
 - Returns - https://chagonzles.github.io/project-x/returns.html
-- Send Parcel - ttps://chagonzles.github.io/project-x/send-parcel.html
+- Send Parcel - https://chagonzles.github.io/project-x/send-parcel.html
