@@ -85,6 +85,9 @@ button {
     margin-left: 5px;
 }
 
+input, textarea, select, label {
+    color: #333334;
+}
 
 input.form-control {
     border-radius: 0;
@@ -97,9 +100,21 @@ input.form-control {
     color: #333334 !important;
 }
 
-input, textarea, select, label {
-    color: #333334;
+.gray-input {
+    background: #908d8d;
+    color: #ffffff !important;
+    border: 1px solid #908d9d;
 }
+
+.gray-input::placeholder {
+    color: #ffffff !important;
+}
+
+.gray-input:active,
+.gray-input:focus {
+    background: #908d8d;
+}
+
 
 textarea {
     resize: none;
@@ -319,12 +334,15 @@ textarea {
 }
 
 .content-title-row {
-    height: 90px;
     background: #ffffff;
 }
 
 .content-title-row h4 {
     line-height: 3rem;
+}
+
+.content-title-row .col:nth-child(2) button {
+    float: right;
 }
 
 .dark-row {
@@ -499,6 +517,12 @@ img.return-icon {
     }
 }
 
+@media (min-width: 320px) and (max-width: 374px) {
+    .content-title-row .col:nth-child(2) button {
+        float: left;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 575px) {
     .sidemenu-col {
         margin-top: 22px;
@@ -540,5 +564,19 @@ img.return-icon {
 
     .th-md {
         width: 200px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 830px) {
+    .table-responsive-sm  {
+       max-width: 425px;
+       overflow-x: auto;
+    }
+}
+
+@media (min-width: 831px) and (max-width: 870px) {
+    .table-responsive-sm  {
+       max-width: 460px;
+       overflow-x: auto;
     }
 }
