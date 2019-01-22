@@ -47,7 +47,6 @@ body {
     text-align: center;
 }
 
-
 button {
     border-radius: 0 !important;
 }
@@ -389,6 +388,32 @@ textarea {
     color: #ffffff;
 }
 
+.td-logo {
+    vertical-align: middle !important;
+    background: #3b3a3a;
+
+}
+.ebay-shop {
+    height: 18px;
+    background: url(../images/ebay.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.amazon-shop {
+    height: 18px;
+    background: url(../images/amazon.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.www-shop {
+    height: 10px;
+    background: url(../images/www.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+}
 table {
     font-size: 14px;
 }
@@ -473,6 +498,10 @@ img.return-icon {
     width: auto;
 }
 
+#delete-all-btn {
+    float: right;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
     .nav-side-menu {
@@ -548,11 +577,24 @@ img.return-icon {
     .sidemenu-col {
         max-width: 250px;
     }
+
+    .content-col {
+        max-width: calc(100% - 250px);
+    }
+
+    .table-responsive-sm {
+        overflow-x: scroll;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
     .content-title-row .col:nth-child(2) button {
         float: left;
+    }
+
+    #create-labels-btn, #delete-all-btn {
+        display: block;
+        width: 100%;
     }
 }
 
@@ -560,6 +602,8 @@ img.return-icon {
     .sidemenu-col {
         margin-top: 22px;
     }
+
+    
 }
 
 @media (min-width: 576px) and (max-width: 757px) {
@@ -597,19 +641,5 @@ img.return-icon {
 
     .th-md {
         width: 200px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 830px) {
-    .table-responsive-sm  {
-       max-width: 425px;
-       overflow-x: auto;
-    }
-}
-
-@media (min-width: 831px) and (max-width: 870px) {
-    .table-responsive-sm  {
-       max-width: 460px;
-       overflow-x: auto;
     }
 }
