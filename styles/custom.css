@@ -29,6 +29,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "ProximaSoft Regular";  
 }
 
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.25rem;
+    line-height: 3.25rem;
+    font-family: "ProximaSoft Medium";
+}
+
 /* GENERAL */
 body {
     margin: 0px;
@@ -45,6 +52,30 @@ body {
 
 .center-align {
     text-align: center;
+}
+
+.inline-text {
+    display: inline;
+}
+
+.dark-text {
+    color: #333232;
+}
+
+.orange-text {
+    color: #fa4d06;
+}
+
+.bold-text {
+    font-family: "ProximaSoft Bold";
+}
+
+.semibold-text {
+    font-family: "ProximaSoft Semibold"
+}
+
+.medium-text {
+    font-family: "ProximaSoft Medium";
 }
 
 button {
@@ -77,6 +108,7 @@ button {
 .btn-secondary {
     background: #333232;
     color: #ffffff;
+    border: 1px solid #333232;
 }
 
 .btn-primary .fa-chevron-right {
@@ -502,6 +534,11 @@ img.return-icon {
     float: right;
 }
 
+.dispatch-details-col {
+    max-width: 180px;
+    text-align: center;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
     .nav-side-menu {
@@ -561,6 +598,10 @@ img.return-icon {
     .content-col > .row {
         padding: 0.5rem 0;
     }
+
+    .dispatch-details-col {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -577,7 +618,9 @@ img.return-icon {
     .sidemenu-col {
         max-width: 250px;
     }
+}
 
+@media (min-width: 769px) and (max-width: 1024px) {
     .content-col {
         max-width: calc(100% - 250px);
     }

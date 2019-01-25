@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Project X</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/all.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header-row">
+        <div class="col">
+          <img src="images/logo.png" alt="" id="logo">  
+          <span id="page-title">Project <span id="title-link">X</span></span>
+        </div>
+        <div class="col">
+            <span id="date-time">Wednesday 28 December 2018 - 11:30</span>
+        </div>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" placeholder="Search" id="search-text">
+            <button type="button" name="" id="search-btn" class="btn btn-primary">GO</button>
+            <i class="fa fa-cog" id="settings-btn"></i>
+        </div>
+      </div><!-- /.row-header -->
+      <div class="row content-row">
+        <div class="col-md-12 col-lg-3 sidemenu-col">
+          <div class="nav-side-menu">
+            <div class="brand">Brand</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li  data-toggle="collapse" data-target="#dispatch" class="collapsed">
+                          <a href="#">Dispatch <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="dispatch">
+                            <li><a href="#">Large Letters</a></li>
+                            <li><a href="#">Parcels & Packets</a></li>
+                            <li><a href="#">Pallets</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Collections</a></li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#customer-service" class="collapsed">
+                          <a href="#">Customer Service <span class="arrow"></span></a>
+                        </li>  
+                        <ul class="sub-menu collapse show" id="customer-service">
+                          <li><a href="#">Tickets</a></li>
+                          <li class="active"><a href="my-claims.html">Customer Returns</a></li>
+                          <li><a href="message-inbox.html">Message Inbox</a></li>
+                        </ul>
+            
+                        <li data-toggle="collapse" data-target="#orders" class="collapsed">
+                          <a href="#">Orders <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="orders">
+                          <li><a href="#">eBay</a></li>
+                          <li><a href="#">Amazon</a></li>
+                          <li><a href="#">Website</a></li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#claims-credits" class="collapsed">
+                          <a href="#">Claims & Credits <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="claims-credits">
+                          <li><a href="#">My Claims</a></li>
+                          <li><a href="#">Pending Credits</a></li>
+                          <li><a href="#">Notifications</a></li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#reports" class="collapsed">
+                          <a href="#">Reports <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="reports">
+                          <li><a href="#">Your Reports</a></li>
+                          <li><a href="#">My Watch list</a></li>
+                          <li><a href="#">7 Day Quick View</a></li>
+                          <li><a href="#">Get Reviews</a></li>
+                        </ul>                
+                    </ul>
+                </div>
+          </div><!-- navside-menu -->
+        </div><!-- /.side-menu-col -->
+
+        <div class="col content-col">
+
+            <div class="row orange-row py-5">
+                <div class="col-sm-6">
+                    <h4>Tracking - <span class="dark-text">JD1234567890123</span></h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Estimated Delivery <span class="dark-text">09:30 - 10:30</span> on <span class="dark-text">01.01.18</span></h4>
+                </div>
+                <div class="col-sm-12 mt-2">
+                    <h6><span class="bold-text">Delivering to:</span> Paul Daniels, Synergy House, Lawson Street, North Shields, Newcastle upon Tyne, NE29 5HF</h6>
+                </div>
+            </div><!-- /.orange-row -->
+
+            <div class="row light-row">
+                <div class="col-sm-12">
+                    <h4>Dispatch Details</h4>
+                </div>
+                <div class="col-sm-4 p-0">
+                    <div class="dispatch-details-col">
+                        <span class="medium-text">Created On</span>
+                        <h1 class="orange-text">01:43</h1>
+                        <h3 class="orange-text">01.01.2018</h3>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4 p-0">
+                    <div class="dispatch-details-col">
+                        <span class="medium-text">Collected</span>
+                        <h1 class="orange-text">08:05</h1>
+                        <h3 class="orange-text">03.01.2018</h3>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4 p-0">
+                    <div class="dispatch-details-col">
+                        <span class="medium-text">Service</span>
+                        <h1 class="orange-text">NEXT DAY</h1>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row dark-row">
+                <div class="col-lg-6">
+                    <h4>Parcel Journey</h4>
+                    <div class="table-dark table-responsive-sm">
+                            <table class="table table-striped table-bordered">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Time</th>
+                                  <th scope="col">Date</th>
+                                  <th scope="col">Scan Event</th>
+                                  <th scope="col">Location</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td>08:40</td>
+                                    <td>11.04.18</td>
+                                    <td>Delivered</td>
+                                    <td>316 Plainfield Avenue</td>
+                                </tr>
+                                <tr>
+                                    <td>08:40</td>
+                                    <td>11.04.18</td>
+                                    <td>Delivered</td>
+                                    <td>316 Plainfield Avenue</td>
+                                </tr>
+                                <tr>
+                                    <td>08:40</td>
+                                    <td>11.04.18</td>
+                                    <td>Delivered</td>
+                                    <td>316 Plainfield Avenue</td>
+                                </tr>
+                                <tr>
+                                    <td>08:40</td>
+                                    <td>11.04.18</td>
+                                    <td>Delivered</td>
+                                    <td>316 Plainfield Avenue</td>
+                                </tr>
+                                <tr>
+                                    <td>08:40</td>
+                                    <td>11.04.18</td>
+                                    <td>Delivered</td>
+                                    <td>316 Plainfield Avenue</td>
+                                </tr>
+                                <tr>
+                                    <td>08:40</td>
+                                    <td>11.04.18</td>
+                                    <td>Delivered</td>
+                                    <td>316 Plainfield Avenue</td>
+                                </tr>
+                               
+                              </tbody>
+                            </table>
+                          </div>
+                          <!-- /.table -->
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="mb-3">En Route</h4>
+                    <p class="medium-text">Joe has <span class="orange-text semibold-text">12 deliveries</span> before you</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.47339532187!2d-0.24168007416574697!3d51.528558242997505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2sph!4v1548391508756" height="300" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+  
+
+            <div class="row orange-row py-5">
+                <div class="col-sm-12">
+                    <h4>In Flights Options</h4>
+                </div>
+                <div class="col-sm-12 mt-2">
+                    <button class="btn btn-secondary mb-2" id="safe-place-btn">
+                        SAFE PLACE <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <button class="btn btn-secondary mb-2" id="neighbor-btn">
+                        NEIGHBOUR <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <button class="btn btn-secondary mb-2" id="change-day-btn">
+                        CHANGE DAY <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <button class="btn btn-secondary mb-2" id="change-delivery-btn">
+                        CHANGE DELIVERY ADDRESS <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <button class="btn btn-secondary mb-2" id="collect-shop-btn">
+                        COLLECT + SHOP <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <button class="btn btn-secondary mb-2" id="collect-depot-btn">
+                        COLLECT FROM DEPOT <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div><!-- /.orange-row -->
+
+            <div class="row light-row">
+                <div class="col-sm-12">
+                    <h4 class="inline-text mr-4 medium-text">Have an issue?</h4>
+                    <button class="btn btn-secondary mr-4" id="create-claim-btn">
+                        CREATE A TICKET <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <h4 class="inline-text mr-4 medium-text">or try our</h4>
+                    <button class="btn btn-primary mr-4" id="create-claim-btn">
+                        LIVE CHAT <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row gray-row">
+                <div class="col-sm-12">
+                    <h4>Tickets / Claims Related to this Parcel</h4>
+                    <div class="table-light table-responsive-sm">
+                        <table class="table table-striped table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col" class="th-sm">Ticket ID</th>
+                              <th scope="col" class="th-md">Type of Ticket</th>
+                              <th scope="col">Latest Comment</th>
+                              <th scope="col" class="th-md">Response Due</th>
+                              <th scope="col" class="th-sm">Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                <td>12345678</td>
+                                <td>Ticket Type</td>
+                                <td>Comment to go here</td>
+                                <td>Response Due</td>
+                                <td>Status</td>
+                            </tr>
+                            <tr>
+                                <td>12345678</td>
+                                <td>Ticket Type</td>
+                                <td>Comment to go here</td>
+                                <td>Response Due</td>
+                                <td>Status</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div><!-- /.table -->
+                </div>
+            </div><!-- /.gray-row -->
+
+            <div class="row dark-row">
+                <div class="col-sm-12">
+                    <h4>Returns</h4>
+                    <div class="table-dark table-responsive-sm">
+                        <table class="table table-striped table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col" class="th-sm">Ticket ID</th>
+                              <th scope="col">Type of Return</th>
+                              <th scope="col" class="th-md">Time</th>
+                              <th scope="col" class="th-md">Date</th>
+                              <th scope="col" class="th-md">Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                <td>12345678</td>
+                                <td>Type of Return</td>
+                                <td>09:54</td>
+                                <td>01.01.18</td>
+                                <td>Status</td>
+                            </tr>
+                            <tr>
+                                <td>12345678</td>
+                                <td>Type of Return</td>
+                                <td>09:54</td>
+                                <td>01.01.18</td>
+                                <td>Status</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div><!-- /.table -->
+                </div>
+            </div><!-- ./dark-row -->
+          
+
+        </div><!-- /.content-col -->
+
+      </div><!-- /.row content -->
+    </div><!-- /.container-fluid -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD600Qtj9_cb5nZH6SEzh_qGGf5kkRJYGw&callback=initMap"
+    async defer></script>
+  </body>
+</html>
