@@ -56,10 +56,6 @@ body {
     padding: 0px;
 }
 
-iframe {
-    height: 100vh;      
-}
-
 .container-fluid { 
     padding-left: 0;
 }
@@ -828,6 +824,10 @@ img.return-icon {
 
 #leave-feedback-row div {
     line-height: 3rem;
+}
+
+#view-ticket-modal-iframe {
+    height: 100vh;
 }
 
 /* MEDIA QUERIES */
