@@ -20,6 +20,20 @@
     src: url("./fonts/ProximaSoft Bold.otf") format("opentype");
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px #d8d5d5;
+    background: #d8d5d5;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #fa4d09;
+  outline: 1px solid #d8d5d5;
+}
+
 div, span, ul, li, a, p, 
 button, input, optgroup, select, textarea {
     font-family: 'ProximaSoft Regular';
@@ -58,6 +72,10 @@ body {
     display: inline;
 }
 
+.light-text {
+    color: #ffffff;
+}
+
 .dark-text {
     color: #333232;
 }
@@ -76,6 +94,10 @@ body {
 
 .medium-text {
     font-family: "ProximaSoft Medium";
+}
+
+.block {
+    display: block;
 }
 
 button {
@@ -184,11 +206,25 @@ textarea {
 .form-check-input {
     margin-left: 0.5rem;
 }
+
+ul.list-group li:nth-child(odd) {
+    background: #f9f7f7;
+}
+
+ul.list-group li:nth-child(even) {
+    background: #ffffff;
+}
+
 /* ICONS */
 .star-rating,
 .star-half-rating {
     height: 18px;
 }
+
+.fa-chevron-down {
+    color: #ff4c00;
+}
+
 
 /* HEADER */
 .header-row {
@@ -370,82 +406,8 @@ textarea {
     font-size: 18px;
 }
 
-/* CONTENT */
-.content-row {
-    margin-top: 80px;
-}
+/* TABLE */
 
-.content-col {
-    padding-left: 30px;
-    background: #ecebeb;
-}
-
-.content-col > .row {
-    padding: 1.25rem 2rem;
-}
-
-.content-title-row {
-    background: #ffffff;
-}
-
-.content-title-row h4 {
-    line-height: 3rem;
-}
-
-.content-title-row .col:nth-child(2) button {
-    float: right;
-}
-
-.dark-row {
-    background: #3b3b3b;
-    color: #ffffff;
-}
-
-.light-row {
-    background: #ffffff;
-    color: #000000;
-}
-
-.gray-row {
-    background: #ecebeb;
-    color: #000000;
-}
-
-.orange-row {
-    background-image: linear-gradient(to right, #fa6006 , #fa9a06);
-    color: #ffffff;
-}
-
-.orange-row label {
-    color: #ffffff;
-}
-
-.td-logo {
-    vertical-align: middle !important;
-    background: #3b3a3a;
-
-}
-.ebay-shop {
-    height: 18px;
-    background: url(../images/ebay.png) no-repeat;
-    background-size: contain;
-    vertical-align: middle;
-}
-
-.amazon-shop {
-    height: 18px;
-    background: url(../images/amazon.png) no-repeat;
-    background-size: contain;
-    vertical-align: middle;
-}
-
-.www-shop {
-    height: 10px;
-    background: url(../images/www.png) no-repeat;
-    background-size: contain;
-    vertical-align: middle;
-}
-}
 table {
     font-size: 14px;
 }
@@ -506,6 +468,83 @@ tbody tr td {
     font-family: "ProximaSoft Medium";
 }
 
+/* CONTENT */
+.content-row {
+    margin-top: 80px;
+}
+
+.content-col {
+    padding-left: 30px;
+    background: #ecebeb;
+}
+
+.content-col > .row {
+    padding: 1.25rem 2rem;
+}
+
+.content-title-row {
+    background: #ffffff;
+}
+
+.content-title-row h4 {
+    line-height: 3rem;
+}
+
+.content-title-row .col:nth-child(2) button {
+    float: right;
+}
+
+.dark-row {
+    background: #3b3b3b;
+    color: #ffffff;
+}
+
+.light-row, .light-col {
+    background: #ffffff;
+    color: #000000;
+}
+
+.gray-row, .gray-col {
+    background: #ecebeb;
+    color: #000000;
+}
+
+.orange-row {
+    background-image: linear-gradient(to right, #fa6006 , #fa9a06);
+    color: #ffffff;
+}
+
+.orange-row label {
+    color: #ffffff;
+}
+
+.td-logo {
+    vertical-align: middle !important;
+    background: #3b3a3a;
+
+}
+.ebay-shop {
+    height: 18px;
+    background: url(../images/ebay.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.amazon-shop {
+    height: 18px;
+    background: url(../images/amazon.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.www-shop {
+    height: 10px;
+    background: url(../images/www.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+
 h4.page-no {
     color: #fa4c06;
 }
@@ -537,6 +576,86 @@ img.return-icon {
 .dispatch-details-col {
     max-width: 180px;
     text-align: center;
+}
+
+.activity-list-container {
+    overflow-y: scroll;
+    height: 435px;
+    scrollbar-color: #fa4d09 #d8d5d5;
+    scrollbar-width: 10px;
+}
+
+.activity-icon-col {
+    max-width: 80px;
+}
+
+.activity-icon-col img {
+    width: 54px;
+}
+
+.drivers-col {
+    text-align: center;
+}
+
+.booking-col {
+    border-right: 1px solid #d8d5d5;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.booking-total {
+    font-size: 10rem;
+    line-height: 10rem;
+    display: block;
+}
+
+.stats-total {
+    font-size: 7rem;
+    line-height: 7rem;
+    display: block;
+}
+
+.stats-row .col {
+    text-align: center;
+    height: 250px;
+}
+
+.stats-row .col:after {
+    content:"";
+    position:absolute;
+    top:20%;
+    right:0;
+    width:1px;
+    height:60%;
+    background:#fcb97d; 
+}
+
+.orders-col:after, 
+.stats-row .col:last-child:after {
+    background: transparent !important;
+}
+
+.right-caret {
+    position: relative;
+    top: 30px;
+    float: right;
+    margin-right: -35px;
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #fb761b;
+    z-index: 999;
+}
+
+.orders-col {
+    background: #fb751b;
+    margin: 0 !important;
+}
+
+.orders-col h5 {
+    position: relative;
+    top: 35%;
 }
 
 /* MEDIA QUERIES */
@@ -608,6 +727,10 @@ img.return-icon {
     .header-row > div:nth-child(2) {
         display: none;
     }
+
+    .orders-col {
+        background: #fb751b !important;
+    }   
 }
 
 @media (min-width: 769px) {
@@ -617,6 +740,14 @@ img.return-icon {
 
     .sidemenu-col {
         max-width: 250px;
+    }
+
+    .drivers-col {
+        max-width: 240px;
+    }
+    
+    .activity-col {
+        max-width: calc(100% - 240px);
     }
 }
 
@@ -639,14 +770,16 @@ img.return-icon {
         display: block;
         width: 100%;
     }
+
+    .right-xs {
+        float: left !important;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
     .sidemenu-col {
         margin-top: 22px;
     }
-
-    
 }
 
 @media (min-width: 576px) and (max-width: 757px) {
@@ -657,6 +790,14 @@ img.return-icon {
 
     .sidemenu-col {
         margin-top: -22px;
+    }
+
+    .drivers-col {
+        max-width: 240px;
+    }
+    
+    .activity-col {
+        max-width: calc(100% - 240px);
     }
 }
 
@@ -684,5 +825,11 @@ img.return-icon {
 
     .th-md {
         width: 200px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .stats-row span {
+        font-size: 6rem;
     }
 }

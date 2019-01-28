@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Project X</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/all.css">
+  </head>
+  <body>
+    <button class="btn btn-primary" id="live-chat-btn">LIVE CHAT</button>
+    <div class="container-fluid">
+      <div class="row header-row">
+        <div class="col">
+          <img src="images/logo.png" alt="" id="logo">  
+          <span id="page-title">Project <span id="title-link">X</span></span>
+        </div>
+        <div class="col">
+            <span id="date-time">Wednesday 28 December 2018 - 11:30</span>
+        </div>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" placeholder="Search" id="search-text">
+            <button type="button" name="" id="search-btn" class="btn btn-primary">GO</button>
+            <i class="fa fa-cog" id="settings-btn"></i>
+        </div>
+      </div><!-- /.row-header -->
+      <div class="row content-row">
+        <div class="col-md-12 col-lg-3 sidemenu-col">
+          <div class="nav-side-menu">
+            <div class="brand">Brand</div>
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                <div class="menu-list">
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <li  data-toggle="collapse" data-target="#dispatch" class="collapsed">
+                          <a href="#">Dispatch <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="dispatch">
+                            <li><a href="#">Large Letters</a></li>
+                            <li><a href="#">Parcels & Packets</a></li>
+                            <li><a href="#">Pallets</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Collections</a></li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#customer-service" class="collapsed">
+                          <a href="#">Customer Service <span class="arrow"></span></a>
+                        </li>  
+                        <ul class="sub-menu collapse show" id="customer-service">
+                          <li><a href="#">Tickets</a></li>
+                          <li class="active"><a href="my-claims.html">Customer Returns</a></li>
+                          <li><a href="message-inbox.html">Message Inbox</a></li>
+                        </ul>
+            
+                        <li data-toggle="collapse" data-target="#orders" class="collapsed">
+                          <a href="#">Orders <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="orders">
+                          <li><a href="#">eBay</a></li>
+                          <li><a href="#">Amazon</a></li>
+                          <li><a href="#">Website</a></li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#claims-credits" class="collapsed">
+                          <a href="#">Claims & Credits <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="claims-credits">
+                          <li><a href="#">My Claims</a></li>
+                          <li><a href="#">Pending Credits</a></li>
+                          <li><a href="#">Notifications</a></li>
+                        </ul>
+    
+                        <li data-toggle="collapse" data-target="#reports" class="collapsed">
+                          <a href="#">Reports <span class="arrow"></span></a>
+                        </li>
+                        <ul class="sub-menu collapse show" id="reports">
+                          <li><a href="#">Your Reports</a></li>
+                          <li><a href="#">My Watch list</a></li>
+                          <li><a href="#">7 Day Quick View</a></li>
+                          <li><a href="#">Get Reviews</a></li>
+                        </ul>                
+                    </ul>
+                </div>
+          </div><!-- navside-menu -->
+        </div><!-- /.side-menu-col -->
+
+        <div class="col content-col">
+            <div class="row light-row p-0">
+                <div class="col drivers-col gray-col px-0">
+                    <div class="px-3">
+                        <h5 class="mt-5 mb-3">Your Driver Today</h5>
+                        <img src="images/avatar.png" class="img-fluid" alt="">
+                        <h3 class="orange-text">Joe Fairrie</h3>
+                    </div>
+                        <hr>
+                    <div class="px-3 py-2">
+                        <small>Your daily scheduled collection is</small>
+                        <h3 class="orange-text">13:30:00</h3>
+                        <small>You will get a specific ETA when he is on his way</small>
+                       
+                        
+                    </div>
+                    <hr>
+                    <div class="px-3 mb-4">
+                        <img src="images/barcode-scan.png" class="img-fluid" alt="">
+                        <small class="my-3 block"><span class="orange-text">Joe</span> can scan this barcode when he arrives to save time.</small>
+                        <img src="images/barcode.png" class="img-fluid mt-1" alt="">
+                    </div>
+                    
+                </div>
+                <div class="col activity-col">
+                    <div class="row light-row">
+                        <div class="col-xl-3 center-align booking-col">
+                            <h5 class="mt-5">Todays Bookings</h5>
+                            <span class="booking-total orange-text">11</span>
+                            <h6 class="orange-text">Dispatched today</h6>
+                            <hr>
+                            <div class="px-3">
+                                <h5>Location</h5>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.47339532187!2d-0.24168007416574697!3d51.528558242997505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2sph!4v1548391508756" height="200" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-9">
+                            <h5 class="mt-5">Latest Activity</h5>
+                            <div class="activity-list-container mt-3 mb-4">
+                                <ul class="list-group mb-3">
+                                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                      <div class="row">
+                                        <div class="col activity-icon-col">
+                                            <img src="images/parcel.png" class="img img-responsive" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <small>Parcel sent to Edward,Unit 5 110 Eastmount Road,Darlington,County Durham,DL1 1LE - has been delivered on 26.04.18 15:35:00 and signed for by EDWAH</small>
+                                            <div>
+                                                <small class="text-muted">Thursday 26 Apr 2018 15:35:00</small>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                      <div class="row">
+                                        <div class="col activity-icon-col">
+                                            <img src="images/avatar.png" class="img img-responsive" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <small>Joe Fairrie just made a collection. Click here to view its digital receipt.</small>
+                                            <div>
+                                                <small class="text-muted">Thursday 26 Apr 2018 15:35:00</small>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                      <div class="row">
+                                        <div class="col activity-icon-col">
+                                            <img src="images/parcel.png" class="img img-responsive" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <small>Parcel sent to Edward,Unit 5 110 Eastmount Road,Darlington,County Durham,DL1 1LE - has been delivered on 26.04.18 15:35:00 and signed for by EDWAH</small>
+                                            <div>
+                                                <small class="text-muted">Thursday 26 Apr 2018 15:35:00</small>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                      <div class="row">
+                                        <div class="col activity-icon-col">
+                                            <img src="images/parcel.png" class="img img-responsive" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <small>Parcel sent to Edward,Unit 5 110 Eastmount Road,Darlington,County Durham,DL1 1LE - has been delivered on 26.04.18 15:35:00 and signed for by EDWAH</small>
+                                            <div>
+                                                <small class="text-muted">Thursday 26 Apr 2018 15:35:00</small>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                      <div class="row">
+                                        <div class="col activity-icon-col">
+                                            <img src="images/parcel.png" class="img img-responsive" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <small>Parcel sent to Edward,Unit 5 110 Eastmount Road,Darlington,County Durham,DL1 1LE - has been delivered on 26.04.18 15:35:00 and signed for by EDWAH</small>
+                                            <div>
+                                                <small class="text-muted">Thursday 26 Apr 2018 15:35:00</small>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row dark-row py-4">
+                        <div class="col-sm-12">
+                            <h5>Monthly Shipments</h5>
+                            <div class="my-3">
+                                <span>March 2018 <i class="fa fa-chevron-down"></i></span>
+                                <span class="float-right right-xs">12 Parcels on average per day</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <canvas id="myChart" width="500" height="130"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row orange-row p-0 stats-row">
+                <div class="col col-md-3 py-4 drivers-col orders-col">
+                    <h5>Orders awaiting shipping</h5>
+                    <div class="right-caret"></div>
+                </div>
+                <div class="col col-md-3 py-4">
+                    <span class="stats-total light-text mb-3">15</span>
+                    <img src="images/ebay-lg.png" class="img-fluid" alt="">
+                </div>
+                <div class="col col-md-3 py-4">
+                    <span class="stats-total light-text mb-3">23</span>
+                    <img src="images/amazon-lg.png" class="img-fluid" alt="">
+                </div>
+                <div class="col col-md-3 py-4">
+                    <span class="stats-total light-text mb-3">12</span>
+                    <img src="images/www-lg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+          
+
+        </div><!-- /.content-col -->
+
+      </div><!-- /.row content -->
+    </div><!-- /.container-fluid -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/Chart.min.js"></script>
+    <script>
+        var xLabels = [];
+        var gridColors = ['#a2a2a2'];
+        for(var i = 1; i <= 31; i++) {
+            gridColors.push('#5e5e5e');
+            if(i < 10) 
+                xLabels.push('0' + i);
+            else
+                xLabels.push(i.toString());
+        }
+    
+        var ctx = document.getElementById('myChart').getContext("2d")
+        var gradient = ctx.createLinearGradient(0, 0, 0, 400);
+        gradient.addColorStop(0, 'rgba(74, 72, 73, 0.9)');   
+        gradient.addColorStop(1, 'rgba(57, 56, 56, 0.5)');
+
+        var myLineChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+            labels: xLabels,
+            datasets: [{
+                    label: '',
+                    data: [14,15,10,8,12,0,0,18,16,15,11,15,0,0,17,17,10,18,17,0,0,17,18,16,17,5,0,0,8,20,15],
+                    pointRadius: 0,
+                    lineTension: 0,
+                    borderColor: '#fa4d09',
+                    backgroundColor: gradient
+                }]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false
+                },
+                hover: {
+                    mode: 'index'
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: gridColors,
+                            
+                        },
+                        scaleLabel: {
+                            display: false
+                        },
+                        ticks: {
+                            fontColor: '#ffffff'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        gridLines: {
+                            color: "rgba(0, 0, 0, 0)",
+                            zeroLineColor: '#a2a2a2',
+                            
+                        },
+                        ticks: {
+                            beginAtZero: true,
+                            stepSize: 5,
+                            stepValue: 5,
+                            fontColor: '#ffffff'
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+  </body>
+</html>
