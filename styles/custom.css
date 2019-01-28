@@ -251,13 +251,19 @@ ul.list-group li:nth-child(even) {
     line-height: 3rem;
 }
 
-.header-row > div:nth-child(3) {
+.header-row > div:nth-child(4) {
     text-align: right;
 }
 
-.header-row > div:nth-child(3) input {
+.header-row > div:nth-child(4) input {
     display: inline;
     width: 75%;
+}
+
+#volume-calculator {
+    max-width: 200px;
+    text-align: right;
+    display: inline;
 }
 
 #search-text {
@@ -292,7 +298,8 @@ ul.list-group li:nth-child(even) {
     text-decoration: underline;
 }
 
-#date-time {
+#date-time,
+#volume-calculator {
     color: #807f7f;
 }
 
@@ -696,13 +703,13 @@ img.return-icon {
         max-width: 100%;
     }
 
-    .header-row > div:nth-child(3) {
+    .header-row > div:nth-child(4) {
         margin-top: 5px;
         margin-bottom: 5px;
-        text-align: center;
+        text-align: center !important;
     } 
 
-    .header-row > div:nth-child(3) input {
+    .header-row > div:nth-child(4) input {
         width: 70%;
     }
 
@@ -720,6 +727,10 @@ img.return-icon {
 
     .dispatch-details-col {
         max-width: 100%;
+    }
+
+    #volume-calculator {
+        display: none;
     }
 }
 
@@ -759,6 +770,10 @@ img.return-icon {
     .table-responsive-sm {
         overflow-x: scroll;
     }
+
+    #volume-calculator {
+        display: none;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -783,7 +798,7 @@ img.return-icon {
 }
 
 @media (min-width: 576px) and (max-width: 757px) {
-    .header-row > div:nth-child(3) {
+    .header-row > div:nth-child(4) {
         flex: 0 0 65%;
         max-width: 65%;
     }
@@ -812,7 +827,7 @@ img.return-icon {
         font-size: 12px;
     }
 
-    .header-row > div:nth-child(3) input {
+    .header-row > div:nth-child(4) input {
         width: 60%;
     }
 
@@ -831,5 +846,13 @@ img.return-icon {
 @media (max-width: 1366px) {
     .stats-row span {
         font-size: 6rem;
+    }
+
+    #volume-calculator span {
+        display: none;
+    }
+
+    #volume-calculator {
+        max-width: 45px;
     }
 }
