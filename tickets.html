@@ -201,7 +201,7 @@
                     <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
                         <div class="carousel-inner row w-100 mx-auto" role="listbox">
                             <div class="carousel-item col col-xl-3 active">
-                                <div class="card parcel" style="width: 18rem;">
+                                <div class="card parcel">
                                     <div class="card-body">
                                         <h5 class="card-title">1 Hour, 3 Mins</h5>
                                         <p class="card-text">
@@ -218,7 +218,7 @@
                                 </div><!-- /.card -->
                             </div>
                             <div class="carousel-item col col-xl-3">
-                                <div class="card damaged" style="width: 18rem;">
+                                <div class="card damaged">
                                     <div class="card-body">
                                         <h5 class="card-title">1 Hour, 24 Mins</h5>
                                         <p class="card-text">
@@ -235,7 +235,7 @@
                                 </div><!-- /.card -->
                             </div>
                             <div class="carousel-item col col-xl-3">
-                                <div class="card disputed" style="width: 18rem;">
+                                <div class="card disputed">
                                     <div class="card-body">
                                         <h5 class="card-title">1 Hour, 37 Mins</h5>
                                         <p class="card-text">
@@ -252,7 +252,7 @@
                                 </div><!-- /.card -->
                             </div>
                             <div class="carousel-item col col-xl-3">
-                                <div class="card disputed" style="width: 18rem;">
+                                <div class="card disputed">
                                     <div class="card-body">
                                         <h5 class="card-title">2 Hour, 14 Mins</h5>
                                         <p class="card-text">
@@ -269,7 +269,7 @@
                                 </div><!-- /.card -->
                             </div>
                             <div class="carousel-item col col-xl-3">
-                                <div class="card parcel" style="width: 18rem;">
+                                <div class="card parcel">
                                     <div class="card-body">
                                         <h5 class="card-title">2 Hour, 35 Mins</h5>
                                         <p class="card-text">
@@ -286,7 +286,7 @@
                                 </div><!-- /.card -->
                             </div>
                             <div class="carousel-item col col-xl-3">
-                                <div class="card damaged" style="width: 18rem;">
+                                <div class="card damaged">
                                     <div class="card-body">
                                         <h5 class="card-title">1 Hour, 10 Mins</h5>
                                         <p class="card-text">
@@ -303,7 +303,7 @@
                                 </div><!-- /.card -->
                             </div>
                             <div class="carousel-item col col-xl-3">
-                                <div class="card parcel" style="width: 18rem;">
+                                <div class="card parcel">
                                     <div class="card-body">
                                         <h5 class="card-title">2 Hour, 24 Mins</h5>
                                         <p class="card-text">
@@ -320,7 +320,7 @@
                                 </div><!-- /.card -->
                             </div>
                             <div class="carousel-item col col-xl-3">
-                                <div class="card disputed" style="width: 18rem;">
+                                <div class="card disputed">
                                     <div class="card-body">
                                         <h5 class="card-title">3 Hour, 14 Mins</h5>
                                         <p class="card-text">
@@ -487,6 +487,19 @@
     </div><!-- /.container-fluid -->
 
 
+    <!--  View Ticket Modal -->
+    <div class="modal fade" id="view-tickets-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="display: none">
+                <!-- insert modal-body here of view-ticket-modal -->
+            </div><!-- /.modal-content -->
+            <div class="modal-content">
+                <iframe src="view-ticket-modal.html" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="scripts/jquery-3.3.1.slim.min.js"></script>
@@ -512,6 +525,10 @@
                 }
             }
         });
+
+    $('.carousel-item .card').click(function(){
+        $('#view-tickets-modal').modal({})
+    })
     </script>
   </body>
 </html>
