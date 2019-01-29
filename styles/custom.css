@@ -626,6 +626,36 @@ img.return-icon {
     text-align: center;
 }
 
+#change-day-btn,
+#change-delivery-btn,
+#collect-shop-btn,
+#collect-depot-btn,
+#hold-holiday-btn {
+    text-align: right; 
+    padding-top: 3px
+}
+
+
+#change-day-btn i,
+#change-delivery-btn i,
+#collect-shop-btn i,
+#collect-depot-btn i,
+#hold-holiday-btn i {
+    position: absolute;
+    margin-top: -10px;
+}
+
+#change-day-btn span,
+#change-delivery-btn span,
+#collect-shop-btn span,
+#collect-depot-btn span,
+#hold-holiday-btn span  {
+    position: relative;
+    left: -5px;
+
+}
+
+
 .activity-list-container {
     overflow-y: scroll;
     height: 435px;
@@ -666,6 +696,10 @@ img.return-icon {
 .stats-row .col {
     text-align: center;
     height: 250px;
+}
+
+.stats-row img {
+    max-width: 60%;
 }
 
 .stats-row .col:after {
@@ -732,7 +766,7 @@ img.return-icon {
     text-align: center;
     height: 75px;
     border-radius: 0 0 90px 90px ;
-    margin: 5px;
+    margin: 5px 20px;
 }
 
 .ticket-desc span {
